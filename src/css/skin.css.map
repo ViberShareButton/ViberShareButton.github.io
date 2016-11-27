@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "skin.css",
+	"sources": [
+		"skin.scss"
+	],
+	"mappings": "",
+	"names": []
+}

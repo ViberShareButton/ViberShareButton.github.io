@@ -1,0 +1,26 @@
+{
+  "name": "viber_share_button",
+  "version": "0.10.0",
+  "description": "A jquery Viber share button plugin",
+  "main": "Gruntfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ViberShareButton/ViberShareButton.github.io.git"
+  },
+  "author": "Nikhil Vijay M K",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ViberShareButton/ViberShareButton.github.io/issues"
+  },
+  "homepage": "ViberShareButton.github.io",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-csslint": "^2.0.0",
+    "grunt-contrib-cssmin": "^1.0.2",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^1.2.1"
+  }
+}
