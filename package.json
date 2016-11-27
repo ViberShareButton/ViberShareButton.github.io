@@ -1,6 +1,6 @@
 {
   "name": "viber_share_button",
-  "version": "0.10.0",
+  "version": "0.10.1",
   "description": "A jquery Viber share button plugin",
   "main": "Gruntfile.js",
   "repository": {
