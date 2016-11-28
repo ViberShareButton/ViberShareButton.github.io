@@ -5,7 +5,7 @@ module.exports = function(grunt) {
       
 		csslint: {
 		  strict: {
-			src: ['src/css/skin.css','src/css/viber.css']
+			src: ['src/css/skin.css','src/css/viber.css','src/css/font.css']
 		  }
 		},
 		
@@ -15,7 +15,7 @@ module.exports = function(grunt) {
 				keepSpecialComments: 0
 			},
 			target: {
-				files: {'dist/css/skin.min.css': ['src/plugin/bootstrap-3.3.7-dist/css/bootstrap.css','src/plugin/pace/pace.css','src/css/skin.css','src/css/viber.css'] }
+				files: {'dist/css/skin.min.css': ['src/plugin/bootstrap-3.3.7-dist/css/bootstrap.css','src/plugin/pace/pace.css','src/css/skin.css','src/css/viber.css','src/css/font.css'] }
 			},
 			target2: {
 				files: {'dist/css/viber.min.css': ['src/css/viber.css'] }
@@ -51,22 +51,38 @@ module.exports = function(grunt) {
 				  {expand: true, cwd: 'dist/css/', src: 'viber.min.css', dest: 'css/'},
 				  {expand: true, cwd: 'src/js/', src: 'viber.js', dest: 'js/'},
 				  {expand: true, cwd: 'dist/js/', src: 'viber.min.js', dest: 'js/'}, 
+				  {expand: true, cwd: 'dist/image/', src: 'sprites.png', dest: 'image/'}, 
 				]
 			}
 		},
 		
 		watch: {
 			scripts: {
-				files: ['src/js/skin.js','src/js/viber.js','src/css/skin.css','src/css/viber.css'],
+				files: ['src/js/skin.js','src/js/viber.js','src/css/skin.scss','src/css/viber.scss','src/css/sprite.scss'],
 				tasks: ['copy', 'sass', 'csslint', 'jshint', 'cssmin', 'uglify', 'compress'],
 				options: {spawn: false,},
 			},
 		},
 		
 		copy: {
-			main: {
+			bootstrapFonts: {
 				files: [
 				  {expand: true, cwd: 'src/plugin/bootstrap-3.3.7-dist/fonts/', src: '**', dest: 'dist/fonts/'},
+				],
+			},
+			icon: {
+				files: [
+				  {expand: true, cwd: 'src/image/', src: 'favicon.ico', dest: 'dist/image/'},
+				],
+			},
+			sprite: {
+				files: [
+				  {expand: true, cwd: 'src/image/', src: 'sprites.png', dest: 'dist/image/'},
+				],
+			},
+			googleFonts: {
+				files: [
+				  {expand: true, cwd: 'src/fonts/', src: '**', dest: 'dist/fonts/'},
 				],
 			},
 		},

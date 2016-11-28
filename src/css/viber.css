@@ -1,2 +1,94 @@
+.Big_btn_main_color, .Big_btn_secondary_01_color, .Big_btn_secondary_02_color, .Med_btn_main_color, .Med_btn_secondary_01_color, .Med_btn_secondary_02_color, .Big_btn_white_color, .Med_btn_white_color, .Icon_big_purple, .Icon_big_white, .Icon_small_purple1, .Icon_small_white, .Small_btn_main_color, .Small_btn_secondary_01_color, .Small_btn_secondary_02_color, .Small_btn_white_color, .share_button, .banner {
+  background: url(image/sprites.png) no-repeat; }
+
+.Big_btn_main_color {
+  background-position: -1px 0;
+  width: 232px;
+  height: 100px; }
+
+.Big_btn_secondary_01_color {
+  background-position: 0 -103px;
+  width: 232px;
+  height: 100px; }
+
+.Big_btn_secondary_02_color {
+  background-position: -1px -207px;
+  width: 232px;
+  height: 100px; }
+
+.Med_btn_main_color {
+  background-position: -251px -1px;
+  width: 186px;
+  height: 80px; }
+
+.Med_btn_secondary_01_color {
+  background-position: -251px -84px;
+  width: 186px;
+  height: 80px; }
+
+.Med_btn_secondary_02_color {
+  background-position: -251px -167px;
+  width: 186px;
+  height: 80px; }
+
+.Big_btn_white_color {
+  background-position: -1px -311px;
+  width: 232px;
+  height: 100px; }
+
+.Med_btn_white_color {
+  background-position: -250px -251px;
+  width: 186px;
+  height: 80px; }
+
+.Icon_big_purple {
+  background-position: -451px -1px;
+  width: 100px;
+  height: 110px; }
+
+.Icon_big_white {
+  background-position: -451px -116px;
+  width: 100px;
+  height: 110px; }
+
+.Icon_small_purple1 {
+  background-position: -251px -336px;
+  width: 44px;
+  height: 48px; }
+
+.Icon_small_white {
+  background-position: -302px -335px;
+  width: 44px;
+  height: 48px; }
+
+.Small_btn_main_color {
+  background-position: -351px -335px;
+  width: 60px;
+  height: 60px; }
+
+.Small_btn_secondary_01_color {
+  background-position: -415px -335px;
+  width: 60px;
+  height: 60px; }
+
+.Small_btn_secondary_02_color {
+  background-position: -450px -230px;
+  width: 60px;
+  height: 60px; }
+
+.Small_btn_white_color {
+  background-position: -481px -335px;
+  width: 60px;
+  height: 60px; }
+
+.share_button {
+  background-position: -559.5px 0;
+  width: 477px;
+  height: 436px; }
+
+.banner {
+  background-position: -243.9921875px -398.98828125px;
+  width: 133px;
+  height: 69px; }
 
 /*# sourceMappingURL=viber.css.map */
