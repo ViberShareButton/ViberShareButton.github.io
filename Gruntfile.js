@@ -41,11 +41,33 @@ module.exports = function(grunt) {
 			}
 		},
 		
+		compress: {
+			main: {
+				options: {
+				  archive: 'download/jquery_viber_share_button.zip'
+				},
+				files: [
+				  {expand: true, cwd: 'src/css/', src: 'viber.css', dest: 'css/'},
+				  {expand: true, cwd: 'dist/css/', src: 'viber.min.css', dest: 'css/'},
+				  {expand: true, cwd: 'src/js/', src: 'viber.js', dest: 'js/'},
+				  {expand: true, cwd: 'dist/js/', src: 'viber.min.js', dest: 'js/'}, 
+				]
+			}
+		},
+		
 		watch: {
 			scripts: {
-				files: ['src/viber.js'],
-				tasks: ['sass', 'csslint', 'jshint','cssmin', 'uglify'],
+				files: ['src/js/skin.js','src/js/viber.js','src/css/skin.css','src/css/viber.css'],
+				tasks: ['copy', 'sass', 'csslint', 'jshint', 'cssmin', 'uglify', 'compress'],
 				options: {spawn: false,},
+			},
+		},
+		
+		copy: {
+			main: {
+				files: [
+				  {expand: true, cwd: 'src/plugin/bootstrap-3.3.7-dist/fonts/', src: '**', dest: 'dist/fonts/'},
+				],
 			},
 		},
 		
@@ -67,6 +89,8 @@ module.exports = function(grunt) {
    grunt.loadNpmTasks('grunt-contrib-jshint');
    grunt.loadNpmTasks('grunt-contrib-uglify');
    grunt.loadNpmTasks('grunt-contrib-watch');
+   grunt.loadNpmTasks('grunt-contrib-compress');
+   grunt.loadNpmTasks('grunt-contrib-copy');
    grunt.loadNpmTasks('grunt-sass');
 
    grunt.registerTask('manual', ['sass', 'csslint', 'jshint','cssmin', 'uglify']);
