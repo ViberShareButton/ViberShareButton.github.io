@@ -34,7 +34,7 @@ module.exports = function(grunt) {
 				keepSpecialComments: 0
 			},
 			target: {
-				files: {'dist/js/core.min.js': ['src/plugin/jquery-1.12.4/jquery.min.js','src/plugin/bootstrap-3.3.7-dist/js/bootstrap.js','src/plugin/pace/pace.js','src/js/skin.js','src/js/viber.js']}
+				files: {'dist/js/core.min.js': ['src/plugin/jquery-1.12.4/jquery.min.js','src/plugin/bootstrap-3.3.7-dist/js/bootstrap.js','src/plugin/pace/pace.js','src/plugin/modernizr/modernizr-custom.js','src/js/skin.js','src/js/viber.js']}
 			},
 			target2: {
 				files: {'dist/js/viber.min.js': ['src/js/viber.js']}
