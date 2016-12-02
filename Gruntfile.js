@@ -15,7 +15,7 @@ module.exports = function(grunt) {
 				keepSpecialComments: 0
 			},
 			target: {
-				files: {'dist/css/skin.min.css': ['src/plugin/bootstrap-3.3.7-dist/css/bootstrap.css','src/plugin/pace/pace.css','src/css/skin.css','src/css/viber.css','src/css/font.css'] }
+				files: {'dist/css/skin.min.css': ['src/plugin/bootstrap-3.3.7-dist/css/bootstrap.css','src/plugin/pace/pace.css','src/css/skin.css','src/css/viber.css','src/css/font.css','src/plugin/normalize/normalize.css'] }
 			},
 			target2: {
 				files: {'dist/css/viber.min.css': ['src/css/viber.css'] }
